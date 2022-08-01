@@ -11,6 +11,18 @@ services:
         value: 1.22.0
       - key: ADVERTISE_ROUTES
         value: 10.0.0.0/8
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_DEFAULT_REGION
+        sync: false
+      - key: AWS_ROUTE53_ZONE_ID
+        sync: false
+      - key: DNS_DOMAIN
+        sync: false
+      - key: DNS_HOSTNAMES
+        sync: false
     disk:
       name: tailscale-state
       mountPath: /var/lib/tailscale
